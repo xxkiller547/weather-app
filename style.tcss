@@ -1,0 +1,95 @@
+/* =========================================================
+   Weather App - style.tcss
+   ========================================================= */
+
+Screen {
+    align: center middle;
+    background: $surface;
+}
+
+/* ---------- Main card ---------- */
+#main {
+    width: 70;
+    max-width: 95%;
+    height: auto;
+    padding: 1 2;
+    background: $panel;
+    border: round $primary;
+}
+
+/* ---------- Title ---------- */
+#title {
+    width: 100%;
+    padding: 0 0 1 0;
+    margin-bottom: 1;
+    text-align: center;
+    text-style: bold;
+    color: $accent;
+    border-bottom: heavy $primary;
+}
+
+/* ---------- Weather container ---------- */
+#weather {
+    width: 100%;
+    height: auto;
+}
+
+/* ---------- Weather description ---------- */
+#weather_description {
+    width: 100%;
+    height: auto;
+    padding: 1 2;
+    margin-bottom: 1;
+    text-align: center;
+    text-style: bold italic;
+    color: $success;
+    background: $surface;
+    border: round $success;
+}
+
+/* ---------- Weather info boxes ---------- */
+#weather_celsius,
+#weather_fahrenheit {
+    width: 100%;
+    height: auto;
+    padding: 1 2;
+    margin-bottom: 1;
+    background: $boost;
+}
+
+#weather_celsius {
+    border-left: thick $warning;
+    color: $text;
+}
+
+#weather_fahrenheit {
+    border-left: thick $error;
+    color: $text;
+}
+
+/* ---------- Refresh button ---------- */
+#refresh {
+    width: 100%;
+    margin-top: 1;
+    text-style: bold;
+}
+
+#refresh:hover {
+    background: $primary-lighten-1;
+}
+
+#refresh:focus {
+    border: tall $accent;
+}
+
+/* ---------- Note ---------- */
+#note {
+    width: 100%;
+    height: auto;
+    margin-top: 1;
+    padding: 1 2;
+    text-align: center;
+    text-style: italic;
+    color: $text-muted;
+    border-top: dashed $primary;
+}
